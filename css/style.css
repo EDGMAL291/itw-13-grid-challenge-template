@@ -59,7 +59,8 @@ a {
 /* ===== main ====== */
 
 main {
-
+    display:  grid;
+    grid-template-columns: auto auto;
 }
 
 .main-content {
@@ -85,6 +86,8 @@ main {
 
 .categories {
     text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto ;
 }
 
 .category {
@@ -96,6 +99,7 @@ main {
 
     background-color: rgb(155, 100, 55);
     color: white;
+    cursor: pointer;
 }
 
 button {
@@ -109,8 +113,10 @@ button:hover {
 /* ===== Sponsor ====== */
 
 .sponsors {
-    display: grid;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto) ;
+
 }
 
 .sponsors > div {
@@ -123,9 +129,10 @@ button:hover {
 #footer {
     background-color: rgb(31, 31, 31);
     color: white;
-
     padding: 2rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 #footer > div {
@@ -136,9 +143,9 @@ button:hover {
 /* ===== grid modifiers ===== */
 
 .col-span-2 {
-
+    grid-column: span 2;
 }
 
 .row-span-2 {
-
+    grid-row: span 2;
 }
